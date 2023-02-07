@@ -4,11 +4,8 @@ import styles from './page.module.css';
 
 export default function Home() {
   const [items, setItems] = useState<string[]>([]);
-  //const [product, setProduct] = useState('');
   const [filter, setFilter] = useState<string>('');
   const inputProduct = useRef<HTMLInputElement>(null);
-  //const [filteredItems, setFilteredItems] = useState<string[]>([]);
-  const [temp, setTemp] = useState<boolean>(false);
 
   const filteredItems = useMemo(
     () =>
